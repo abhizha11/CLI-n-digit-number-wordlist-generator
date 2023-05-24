@@ -13,6 +13,18 @@ def generate_wordlist_helper(prefix, n, numbers, wordlist):
     for num in numbers:
         generate_wordlist_helper(prefix + num, n - 1, numbers, wordlist)
 
+
+# Display banner
+banner = """
+===============================================
+   CLI-N-Digit Number Wordlist Generator
+		BY @abhizha11 (Sagar Jha)
+================================================
+"""
+
+print(banner)
+
+
 # Prompt user for input
 n = input("Enter the number of digits: ")
 if not n.isdigit():
